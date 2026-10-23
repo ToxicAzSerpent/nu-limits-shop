@@ -1,0 +1,47 @@
+{
+  "name": "ShopSettings",
+  "type": "object",
+  "properties": {
+    "store_name": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "hero_kicker": {
+      "type": "string"
+    },
+    "hero_caption": {
+      "type": "string"
+    },
+    "panel_description": {
+      "type": "string"
+    },
+    "background": {
+      "type": "string",
+      "default": "noir"
+    },
+    "currency": {
+      "type": "string",
+      "default": "R"
+    }
+  },
+  "rls": {
+    "read": {},
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
